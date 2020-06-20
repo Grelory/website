@@ -15,17 +15,14 @@ button.disabled = true;
 
 function nameProvided() {
 	name = document.getElementById("name").value;
-	if (name.length>4) {validate();}
 }
 
 function emailProvided() {
 	email = document.getElementById("email").value;
-	console.log(email);
 }
 
 function messageProvided() {
 	message = document.getElementById("textarea").value;
-	console.log(message);
 }
 
 function disableButton() {
