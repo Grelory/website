@@ -20,15 +20,16 @@
 			<h1>Contact with me!</h1>
 
 			<label for="name"  id= "label">Name</label>
-			<input type="text" name="name" id="name" placeholder="Enter your name">
+			<input type="text" name="name" id="name" placeholder="Enter your name" onkeyup="nameProvided(); disableButton();">
 
 			<label for="email" id= "label">Email<label>
-			<input type="text" name="email" id="email" placeholder="Enter your email">
+			<input type="text" name="email" id="email" placeholder="Enter your email" onkeyup="emailProvided(); disableButton();">
 
 			<label for="textarea" id= "label">Text</label>
-			<textarea rows="5" cols="20" id="textarea" placeholder="Enter your message"></textarea>
+			<textarea rows="5" cols="20" id="textarea" placeholder="Enter your message" onkeyup="messageProvided(); disableButton();"></textarea>
 
-			<button type="submit">Send!</button>
+			<button type="button" onclick="validate()">Send!</button>
+			<script src="scripts/contactValidation.js"></script>
 		</form>
 	</div>
 	<footer>
