@@ -1,7 +1,8 @@
 <!Doctype html>
-<html>
+<html lang="en">
 
 <head>
+	<meta charset="utf-8"/>
 	<title>Title of page</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,16 +17,16 @@
 	</header>
 	
 	<div class="content">
-		<form action="" method="post">
+		<form action="/index.html" method="post">
 			<h1>Contact with me!</h1>
 
-			<label for="name"  id= "label">Name</label>
+			<label for="name"  id= "nameLabel">Name</label>
 			<input type="text" name="name" id="name" placeholder="Enter your name" onkeyup="nameProvided(); disableButton();">
 
-			<label for="email" id= "label">Email<label>
+			<label for="email" id= "emailLabel">Email</label>
 			<input type="text" name="email" id="email" placeholder="Enter your email" onkeyup="emailProvided(); disableButton();">
 
-			<label for="textarea" id= "label">Text</label>
+			<label for="textarea" id= "textareaLabel">Text</label>
 			<textarea rows="5" cols="20" id="textarea" placeholder="Enter your message" onkeyup="messageProvided(); disableButton();"></textarea>
 
 			<button type="button" onclick="validate()">Send!</button>
