@@ -82,6 +82,7 @@ function removeErrorFromHtmlIfExist() {
 }
 
 function changeWrongInputsBackgroundColor() {
+	clearInputsBackgroundColor();
 	if (!properName) {
 		document.getElementById("name").style.background = "yellow";
 	}
