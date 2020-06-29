@@ -42,12 +42,6 @@ body div p {
 	align-self: flex-start;
 }
 
-body footer {
-	position: fixed;
-	bottom: 1em;
-	right: 1em;
-}
-
 div form {
 	display: flex;
 	flex-direction: column;
@@ -71,6 +65,33 @@ div form button {
 	padding: 1em 6.25em;
 }
 
+body footer.right {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+}
+
+body footer.left{
+	position: fixed;
+	bottom: 1em;
+	left: 1em;
+}
+
+body table {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+body table tr th, body table tr td {
+	width: 20%;
+	margin: 0px;
+	border: solid;
+	border-width: 0.2em;
+	border-color: black;
+
+}
 
 
 
